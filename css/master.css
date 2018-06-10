@@ -3,20 +3,46 @@
 }
 
 body {
-  background-color: #ff4da6;
+  background-color: #ff99cc;
 }
 
 div {
   font-family: 'Open Sans', sans-serif;
 }
 
-#vircounter {
+#virCounter {
   text-align: center;
   font-size: 5em;
   color: white;
 }
 
-.upbutton {
+.buttoncolumn {
+  float: left;
+  width: 33.33%;
+}
+
+.virbutton {
   display: block;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  border-radius: 4px;
   margin: auto;
+  background-color:  #ff0080;
+  color: white;
+  padding: 0.5em 2em;
+  transition: 0.1s;
+  text-align: center;
+  cursor: pointer;
+}
+.virbutton:hover:not(.disabled) {background-color: #cc0066}
+.virbutton:active:not(.disabled){background-color: #99004d}
+
+.disabled:not(.hidden) {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.hidden {
+  opacity:0;
+  cursor: default;
 }
